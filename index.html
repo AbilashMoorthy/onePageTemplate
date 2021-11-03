@@ -13,24 +13,24 @@
     
     </head>
     <body>
-        <div class="fixed-position">
+        <div class="fixed-position" id="header">
             <div class="container">
                 <header class="header-container d-flex align-center">
                     <div class="navbar-left d-flex">
                         <div class="nav-logo nav-name align-self-center"> <a href="#name">My Template </a> </div>
                     </div>
-                    <nav class="navbar-center">
+                    <nav class="navbar-center" id="navbar">
                         <div class="toggle">
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <span>Menu</span>  <i class="fa fa-bars"></i>
                             </a>
                             </div>
                         
-                        <div class="topnav nav-lists d-flex menu" id="myTopnav"> 
-                            <a href="#home" class="nav-list active">Home</a>
-                            <a href="#features" class="nav-list">Features</a>
-                            <a href="#about" class="nav-list">About</a>
-                            <a href="#strategy" class="nav-list">Strategies</a>
+                        <div class="topnav nav-lists d-flex" id="myTopnav"> 
+                            <a href="#home" class="nav-list scrollto active">Home</a>
+                            <a href="#features" class="nav-list scrollto">Features</a>
+                            <a href="#about" class="nav-list scrollto">About</a>
+                            <a href="#strategy" class="nav-list scrollto">Strategies</a>
                             
                         </div>
                     </nav>                 
@@ -217,18 +217,7 @@
             </div>
         </footer>
 
+        <script type="text/javascript" src="assets/js/main.js"></script>
         <script src="assets/js/aos.js"></script>
-        <script>
-            AOS.init();
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-        </script>
-
     </body>
 </html>
